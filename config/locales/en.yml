@@ -20,4 +20,23 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  simple_form:
+    error_notification:
+      product: "Revise los campos"
+      brand: "Revise los campos"
+  activerecord:
+    errors:
+      models:
+        brand:
+          attributes:
+            name:
+              blank: "No puedes crear una Marca sin nombre"
+        product:
+          attributes:
+            name:
+              blank: "No puedes crear un Producto sin nombre"
+            price:
+              blank: "No puedes crear un Producto sin precio"
+            brand_id:
+              blank: "Necesitar elegir una Marca"
+

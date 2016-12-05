@@ -28,7 +28,7 @@ class BrandsController < ApplicationController
 
     respond_to do |format|
       if @brand.save
-        format.html { redirect_to @brand, notice: 'Brand was successfully created.' }
+        format.html { redirect_to brands_url, notice: 'Se añadio la marca exitósamente' }
         format.json { render :show, status: :created, location: @brand }
       else
         format.html { render :new }
